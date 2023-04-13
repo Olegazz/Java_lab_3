@@ -37,11 +37,11 @@ public class Data {
      */
     public static String getGender(String personData){
         try {
-            if (personData.charAt(personData.length()-1) == '÷'){
-                return "Ì";
+            if (personData.charAt(personData.length()-1) == 'Ñ‡'){
+                return "Ðœ";
             }
-            else if (personData.charAt(personData.length()-1) == 'à'){
-                return "Æ";
+            else if (personData.charAt(personData.length()-1) == 'Ð°'){
+                return "Ð–";
             }
             else {
                 System.out.println("Wrong name");
@@ -67,12 +67,12 @@ public class Data {
             String age = Integer.toString(Period.between(birthday, nowDate).getYears());
             int age_1 = Integer.parseInt(age);
             if ((age_1 % 10 <= 9 && age_1 % 10 > 4) || (age_1 % 10 == 0) || (age_1 < 15 && age_1 > 10)) {
-                age += " ëåò";
+                age += " Ð»ÐµÑ‚";
             } else if (age_1%10 > 1 && age_1%10 < 5) {
-                age += " ãîäà";
+                age += " Ð³Ð¾Ð´Ð°";
             }
             else {
-                age+=" ãîä";
+                age+=" Ð³Ð¾Ð´";
             }
             return age;
         }catch (Exception e){

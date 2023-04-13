@@ -3,7 +3,7 @@ import WorkProcess.Data;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Введите данные персоны");
+        System.out.println("Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ РїРµСЂСЃРѕРЅС‹");
         Scanner scanner = new Scanner(System.in);
 
         String buffer = scanner.nextLine();
